@@ -5,8 +5,8 @@ export const EditTodoForm = ({ editTodo, updateTodo }) => {
   const [value, setValue] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (value.length < 4) {
-      alert("Require a Task!!!");
+    if (value.length == 0) {
+      alert("Requires a Task!!!");
       return;
     }
 
